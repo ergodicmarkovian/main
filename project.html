@@ -82,8 +82,82 @@
 I am interested in some fundamental problems of RL and AI, and fortunate enough to have some outcomes we are particularly proud of
 <br><br>
 
-<img src="./publication_files/1.png" width="800" height="300">                    
-                   
+<!-- Paste these entries inside the existing Selected Projects container.
+     Export the indicated figures into ./publication_files/ first. -->
+
+<!-- Project 1: Figure 1 from arXiv:2610.03769. -->
+<img src="./files/receiver_usable_communication.png"
+     width="800" style="max-width:100%; height:auto;"
+     alt="Illustrative comparison of information-sufficient messages with different receiver usability.">
+<p></p><br>
+<strong>Receiver-Usable Communication in Multi-Agent AI</strong>:
+More information does not always lead to better decisions. Even a correct message
+can fail if the receiving agent cannot easily use it. When should agents exchange
+short messages, share the full context, or work independently? We study communication
+through its effect on the receiver's next decision, accounting for both useful
+information and the burden of processing it.
+<br>
+<span style="color:#FF0000;"><strong>Technical contributions:</strong></span>
+<ul>
+  <li>A receiver-relative theory of communication that explains why Bayes-sufficient
+      compression can still fail for agents with bounded processing capabilities.</li>
+  <li>A decomposition into externalization, absorption, and action closure to
+      distinguish missing information from failures to turn recovered information
+      into the correct action.</li>
+  <li>An inference-time protocol selector, evaluated across six benchmark families,
+      that balances receiver gain, communication burden, and cost.</li>
+</ul>
+<span style="color:#FF0000;"><strong>Publications:</strong></span><br>
+<a href="https://arxiv.org/abs/2610.03769">[NeurIPS'2026: Bayes-Sufficient Compression Is Not Enough]</a>
+<br>
+<span style="color:#FF0000;"><strong>Codes:</strong></span><br>
+<a href="https://github.com/Yydc/Communication">[Evaluation artifacts]</a>
+<br><br><br>
+
+<!-- Project 2: Figure 1 from TeamTR, arXiv:2605.15207 (PDF page 2).
+     This single illustration represents the combined SAT/TeamTR project. -->
+<!-- <img src="./publication_files/multi_llm_training.png"
+     width="800" style="max-width:100%; height:auto;"
+     alt="Comparison of joint updates, naive sequential updates, and TeamTR updates using fresh occupancy."> -->
+<p></p><br>
+<strong>Stable Training and Plug-and-Play Multi-Agent LLMs</strong>:
+Can a team of smaller language models compete with a much larger model?
+Training such teams is challenging: updating one agent changes the context seen
+by the others, potentially disrupting coordination. Through Sequential Agent
+Tuning (SAT) and TeamTR, we develop sequential training methods that control
+these changes and support upgrading individual agents without retraining the
+entire team.
+<br>
+<span style="color:#FF0000;"><strong>Technical contributions:</strong></span>
+<ul>
+  <li>SAT: coordinator-free sequential agent tuning with sequence-aware advantage
+      estimation and per-agent KL trust regions, providing improvement bounds
+      and plug-and-play certificates under the stated assumptions.</li>
+  <li>TeamTR: an analysis of compounding occupancy shift showing that, under the
+      paper's trust-region assumptions, fresh intermediate-policy evaluation
+      reduces the stale-occupancy penalty's dependence on team size from
+      quadratic to linear.</li>
+  <li>Practical sequential fine-tuning with fresh rollouts and controlled agent
+      updates, evaluated on reasoning and planning tasks and component upgrades.</li>
+</ul>
+<span style="color:#FF0000;"><strong>Publications:</strong></span><br>
+<a href="https://arxiv.org/abs/2605.05216">[AAMAS'2026 (SAT)]</a>
+<a href="https://arxiv.org/abs/2605.15207">[ICML'2026 (TeamTR)]</a>
+<br>
+<span style="color:#FF0000;"><strong>Codes:</strong></span><br>
+<a href="https://github.com/Yydc/SAT-AAMAS">[SAT]</a>
+<a href="https://github.com/Yydc/TeamTR">[TeamTR]</a>
+<br><br><br>
+
+<!-- Paste these entries inside the existing Selected Projects container.
+     Export the indicated figures into ./publication_files/ first. -->
+
+
+
+
+        
+
+<img src="./publication_files/1.png" width="800" height="300">                                       
 <p></p><br>
 <strong>Counterfactual Prediction and Control</strong>: Humans and robots learn to perceive and interact with the world via real-time interactions. Can they do this not by real-time interactions but by learning only from past experiences? This is challenging since the past experience may be very different from the current scenario, which is termed "counterfactual." 
 <br>
